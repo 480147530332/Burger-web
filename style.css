@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* body,html{
+    background-color: blueviolet;
+} */
+.logo{
+    color: #ffffff;
+}
+.logo {
+    align-items: center;
+    position: relative;
+    top: 9px;
+    font-size: 22px;
+    /* background-color: red; */
+    width: 200px;
+}
+.logo img{
+    width: 180px;
+    height: 12vh;
+    position: relative;
+    top: -29px;
+}
+nav{
+    
+    padding: 10px 30px;
+    display: flex;
+    background-color: rgb(255, 145, 0);;
+    justify-content: space-between;
+    height: 70px; 
+     position: relative;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+nav ul li {
+   list-style: none;
+}
+nav ul li a {
+    padding: 12px;
+    color: #070606;
+    position: relative;
+    top: 22px;
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+      background-color: white;
+      color: black;
+      border-radius: 30px;
+      transition: 0.5s ease-in;
+}
+.menu{
+    display: none;
+}
+/* Menu Gallery Styles */
+#menu-gallery {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#menu-gallery .section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.burger-item {
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .burger-item {
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .card-img-top {
+        height: 180px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+}
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .about-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #e31837;  /* Burger King's Red */
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  ul li strong {
+    color: #e31837;
+  }
+  
+  .promise {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  .about-img img {
+    position: relative;
+    top: 7em;
+  }
+ 
+/* about */
+.fade-in-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important; /* Ensure it is fully visible */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-img img {
+      max-width: 80%;
+      margin-bottom: 30px;
+    }
+  }
+/* media */
+
+@media (max-width:579px){
+nav ul{
+    display: block;
+    top: 70px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    transition: 0.7s ease-in;
+    /* height: 300px; */
+    overflow: hidden;
+    z-index: 1;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+}
+ul li {
+    padding: 6px;
+}
+
+.menu{
+    display: block;
+    color: #fefefe;
+    font-size: 25px;
+    align-items: center;
+    position: relative;
+    top: 9px;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    /* left: 29px; */
+    top: 2em;
+    border-radius: 8px;
+}
+
+
+
+};
+
+.containerF{
+    display: flex;
+}
+form{
+    display: flex;
+}
+
+/* foooter */
+/* General Styles for Footer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f1950b;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #050505;
+}
+
+/* Footer Social Icons */
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    color: #000000;
+    transform: scale(1.1);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-social {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* footer end */
