@@ -20,7 +20,7 @@
 }
 .logo img{
     width: 180px;
-    height: 12vh;
+    height: 15vh;
     position: relative;
     top: -29px;
 }
@@ -59,12 +59,14 @@ nav ul li a:hover{
 }
 .menu{
     display: none;
+    
 }
 /* Menu Gallery Styles */
 #menu-gallery {
     padding: 50px 0;
     background-color: #f8f9fa;
     text-align: center;
+    overflow-x: hidden;
 }
 
 #menu-gallery .section-title {
@@ -83,6 +85,7 @@ nav ul li a:hover{
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    
 }
 
 .card:hover {
@@ -139,6 +142,7 @@ nav ul li a:hover{
     .price {
         font-size: 16px;
     }
+    
 }
 
 /* Small screens (phones) */
@@ -158,6 +162,15 @@ nav ul li a:hover{
     .price {
         font-size: 14px;
     }
+
+    .logo img{
+        width: 180px;
+        height: 9vh;
+        position: relative;
+        top: -18px;
+        right: 2em;
+    }
+    
 }
 #about {
     display: flex;
@@ -227,7 +240,6 @@ nav ul li a:hover{
   }
   .about-img img {
     position: relative;
-    top: 7em;
   }
  
 /* about */
@@ -251,20 +263,21 @@ nav ul li a:hover{
 /* media */
 
 @media (max-width:579px){
-nav ul{
-    display: block;
-    top: 70px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    flex-direction: column;
-    text-align: center;
-    gap: 0;
-    transition: 0.7s ease-in;
-    /* height: 300px; */
-    overflow: hidden;
-    z-index: 1;
-}
+    nav ul {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        z-index: 1;
+        transition: 0.7s ease-in;
+        overflow: hidden;
+    }
+
+    
 .carousel-inner {
     position: relative;
     width: 100%;
@@ -292,8 +305,21 @@ ul li {
     top: 2em;
     border-radius: 8px;
 }
-
-
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    display: flex
+;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
 
 };
 
@@ -322,7 +348,14 @@ body {
 .footer {
     background-color: #f1950b;
     padding: 40px 0;
+    height: 86vh;
     text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+margin: auto;
+border-bottom: solid black;
 }
 
 .footer-container {
@@ -406,3 +439,63 @@ body {
 }
 
 /* footer end */
+
+/* about  */
+/* Add the basic styling to your ABOUT section */
+#ABOUT {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+  }
+  
+  /* Fade in animation for the About section */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Apply fade-in animation to the about-img */
+  .about-img {
+    animation: fadeIn 1s ease-out;
+    opacity: 0;
+  }
+  
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Apply fade-in and slide-up animation to the about-text */
+  .about-text {
+    animation: fadeIn 1.5s ease-out;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  /* Delay the animation for about-text */
+  .about-text h1 {
+    animation: fadeIn 2s ease-out;
+    animation-delay: 0.5s;
+  }
+  
+  .about-text p {
+    animation: fadeIn 2s ease-out;
+    animation-delay: 1s;
+  }
+  
+  /* Optional: A smooth scrolling effect */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+  /* up btn */
+  #up{
+    /* position: sticky; */
+    float: inline-end;
+    width: 150px;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    border-radius: 20%;
+    font-size: 20px;
+  }
