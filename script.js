@@ -36,3 +36,23 @@ document.querySelectorAll('.social-icon').forEach(icon => {
         console.log(`Redirecting to ${icon.textContent} page`);
     });
 });
+
+
+// ani
+// Example JavaScript for form validation
+document.getElementById('register-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+    }
+
+    // Here you can handle the registration logic, e.g., sending the data to a server
+    alert("Registration successful!");
+});
+
+
