@@ -1,41 +1,35 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Login Form Design | CodeLab</title>
-      <link rel="stylesheet" href="contact.css">
-   </head>
-   <body>
-      <div class="wrapper">
-         <div class="title">
-            Login 
-         </div>
-         <form action="#">
-            <div class="field">
-               <input type="text" required>
-               <label>Email Address</label>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Sign In Account</h2>
+        <form id="register-form">
+
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
             </div>
-            <div class="field">
-               <input type="password" required>
-               <label>Password</label>
+
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
             </div>
-            <div class="content">
-               <div class="checkbox">
-                  <input type="checkbox" id="remember-me">
-                  <label for="remember-me">Remember me</label>
-               </div>
-               <div class="pass-link">
-                  <a href="#">Forgot password?</a>
-               </div>
-            </div>
-            <div class="field">
-               <input type="submit" value="Login">
-            </div>
-            <div class="signup-link">
-               Not a member? <a href="#">Signup now</a>
-            </div>
-         </form>
-      </div>
-   </body>
+
+
+            <button type="submit" class="submit-btn">Login</button>
+
+            <p class="login-link">Don't have an account? <a href="contact.html">Ragister here</a></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
